@@ -9,7 +9,7 @@ session_start();
 require_once('autoloader.php');
 require_once("helpers/helpers.php");
 
-$request = str_replace("/git/scandiweb/", "", $_SERVER['REQUEST_URI']);
+$request = str_replace("/", "", $_SERVER['REQUEST_URI']);
 substr($request, 0, strrpos($request, '?'));
 
 $productController = new ProductController();
