@@ -2,7 +2,7 @@
 creating, deleting &amp; view products
 
 # Requirements
-  1. Php
+  1. Php: ^7.4
   2. MySql
   
 # Installation
