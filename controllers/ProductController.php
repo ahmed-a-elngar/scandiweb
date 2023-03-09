@@ -63,7 +63,6 @@ class ProductController
             $_SESSION['error'] = "An error occured. please try again";
             header(self::HEADER_LOCATION . $_SERVER["HTTP_REFERER"]);
         }
-
     }
 
     protected function isSkuValid(string $sku)

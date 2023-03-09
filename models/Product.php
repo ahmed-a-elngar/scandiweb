@@ -1,6 +1,4 @@
 <?php
-require_once('models/Model.php');
-
 abstract class Product extends Model
 {
     protected $tableName = "products";

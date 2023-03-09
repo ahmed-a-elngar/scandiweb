@@ -3,8 +3,6 @@ include_once("views/create/header.php");
 ?>
 <div class="container col-md-6 col-sm-12 mt-4">
 
-
-
     <form id="product_form" class="form-inline" method="POST" action="store">
 
         <div class="mb-3 row">
@@ -82,9 +80,3 @@ include_once("views/create/header.php");
 
     </form>
 </div>
-
-<?php
-if (old('type')) {
-    echo "<script> document.getElementById('productType').dispatchEvent(new Event('change')); </script>";
-}
-?>

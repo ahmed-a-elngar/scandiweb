@@ -1,14 +1,15 @@
 <?php
 ob_start();
-ini_set('display_errors', 1);
-error_reporting(~0);
+
+// ini_set('display_errors', 1);
+// error_reporting(~0);
 
 session_start();
 
 require_once('autoloader.php');
 require_once("helpers/helpers.php");
 
-$request = str_replace("/tasks/scandiweb/", "", $_SERVER['REQUEST_URI']);
+$request = str_replace("/git/scandiweb/", "", $_SERVER['REQUEST_URI']);
 substr($request, 0, strrpos($request, '?'));
 
 $productController = new ProductController();

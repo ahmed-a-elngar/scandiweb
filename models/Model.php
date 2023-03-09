@@ -1,5 +1,4 @@
 <?php
-require_once('models/DB.php');
 
 class Model extends DB
 {
@@ -10,7 +9,7 @@ class Model extends DB
 
     public function __construct()
     {
-        $this->tableName ??= strtolower(self::class);
+        $this->tableName ??= strtolower(get_class($this));
     }
 
     public function select(string ...$targetColumns)
